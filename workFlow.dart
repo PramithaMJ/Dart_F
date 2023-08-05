@@ -28,5 +28,25 @@ void main() {
     mark >= 50 ? print('Pass') : print('Fail');
   }
 
+  Set<String> nameSet={'amal','kamal','nimal'}
+  print(nameSet);
+  print(nameSet.first);
+  print(nameSet.last);
+  nameSet.add('pramitha');
+
+  for(String name in nameSet){
+    print(nameSet);
+  }
+
+  Set<String> asiaContries={'Sri lanka','India','Singapore',Bangaladesh'};
+  Set<String> europeContries ={'sweden','germany','Molta'};
+  Set<String> allCountries = asiaContries.union(europeContries);
+  print(allCountries);
+
+  Set<String> countriesInBotheuropianAndAsia = asiaContries.intersection(europeContries);
+  print(countriesInBotheuropianAndAsia);
+
+  set<String> countriesInAsiaOnly =asiaContries.difference(europeContries);
+  print(countriesInAsiaOnly);
 
 }
