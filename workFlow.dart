@@ -9,11 +9,8 @@ void main() {
   }else{
      print("Hello ${firstName[0]}.${lastName.toUpperCase()} your phone number is wrong");
   }
-}
 
-
-void main() {
-  int applePrice=25;
+ int applePrice=25;
   int customerMoney=80;
 
   if(applePrice<=customerMoney){
@@ -23,6 +20,13 @@ void main() {
   }else{
     print("You cannot purchase apple");
   }
+
+ 
+  List<int> marks = [23, 76, 12, 54, 58, 65, 12, 45, 66];
+
+  for (int mark in marks) {
+    mark >= 50 ? print('Pass') : print('Fail');
+  }
+
+
 }
-
-
